@@ -1,0 +1,269 @@
+/*
+
+	Theme Name: SCTheme
+	Author: Sean Creagh
+	Description: SCTheme Layout
+	Version: 1.0
+
+*/
+
+
+
+/* --- CSS Reset --- */
+
+/* --- ******************** ******************** ******************** --- */
+
+html, body, header, div, nav, ul, ol, li, h1, h2, h3, h4, h5, h6, p, span, strong, b, i, a, time, form, label, input, textarea, button, iframe, footer { font: inherit; font-size: 100%; text-decoration: none; margin: 0; padding: 0; border: 0; outline: 0; vertical-align: top; }
+
+
+
+/* --- Universal Theme Styles --- */
+
+/* --- ******************** ******************** ******************** --- */
+
+/* --- Container Elements Styles --- */
+html, body, header, #Content, footer { width: 100%; display: block; }
+.wrapper { width: 100%; height: auto; display: block; }
+.container { width: calc(100%-40px); max-width: 1200px; margin: 0 auto; display: block; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:after { content: "."; height: 0; margin: 0; padding: 0; display: block; visibility: hidden; clear: both; }
+.remove-spacing { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.menu, .widget { margin: 0 5px; display: inline-block; }
+
+/* --- Contact Link Styles --- */
+a[href^="tel"]:before, a[href^="mailto"]:before { margin-right: 10px; }
+
+/* --- Underlined Link Styles --- */
+.underlined-link { display: inline-block; position:relative; }
+.underlined-link:after { content: ""; width: 100%; height: 4; border-bottom-width: 1px; border-bottom-style: solid; margin-top: 3px; display: block; position: absolute; }
+
+a[rel^="author"] { display: inline-block; position:relative; }
+a[rel^="author"]:after { content: ""; width: 100%; height: 4; border-bottom-width: 1px; border-bottom-style: dotted; margin-top: 3px; display: block; position: absolute; }
+
+/* --- Image Styles --- */
+img { width: 100%; height: auto; display: block; }
+
+/* --- List Styles --- */
+#Content ul li, .widget_text ul li, .widget_archive ul li { list-style: disc outside; }
+#Content ol, #Content ul, .widget_text ol, .widget_text ul, .widget_archive ol, .widget_archive ul { margin: 0 0 15px 20px; }
+#Content ol li, #Content ul li, .widget_text ol li, .widget_text ul li, .widget_archive ol li, .widget_archive ul li { margin: 5px 0; display: list-item; text-align: -webkit-match-parent; }
+#Content ol li:first-of-type, #Content ul li:first-of-type, .widget_text ol li:first-of-type, .widget_text ul li:first-of-type, .widget_archive ol li:first-of-type, .widget_archive ul li:first-of-type { margin: 0 0 5px 0; }
+#Content ol li:last-of-type, #Content ul li:last-of-type, .widget_text ol li:last-of-type, .widget_text ul li:last-of-type, .widget_archive ol li:last-of-type, .widget_archive ul li:last-of-type { margin: 5px 0 0 0; }
+#Content ol li:only-of-type, #Content ul li:only-of-type, .widget_text ol li:only-of-type, .widget_text ul li:only-of-type, .widget_archive ol li:only-of-type, .widget_archive ul li:only-of-type { margin: 0; }
+
+/* --- Form Element Styles --- */
+.wpcf7-form, .wpcf7-form .form-column, .comment-form { font-size: 0; max-width: 100%; height: auto; display: inline-block; }
+.wpcf7-form .form-column, .comment-form p[class^="comment-form"] { margin-bottom: 15px; }
+.wpcf7-form .form-column.half { width: 49%; }
+.wpcf7-form .form-column.half:nth-of-type(2) { margin-right: 1%; }
+.wpcf7-form .form-column.half:nth-of-type(3) { margin-left: 1%; }
+.wpcf7-form .form-column.full { width: 100%; }
+.wpcf7-form .form-column.full.last-form-element { margin-bottom: 0; }
+.wpcf7-form .wpcf7-form-control-wrap { width: 100%; display: inline-block; }
+.wpcf7-form .form-elements, .comment-form #author, .comment-form #email, .comment-form #url, .comment-form #comment, #s { width: 100%; max-width: 100%; border-width: 1px; border-style: solid; border-radius: 2px; padding: 10px; display: inline-block; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.wpcf7-form textarea.form-elements, .comment-form #comment { height: 150px; }
+.wpcf7-form input[type=submit], .comment-form #submit, #searchsubmit, a.button { border-width: 2px; border-style: solid; border-radius: 4px; width: 50%; padding: 10px; }
+
+/* --- Blockquote Styles --- */
+blockquote p { font-style: italic; margin: 0 15px; display:inline; }
+
+
+
+/* --- Theme Header Styles --- */
+
+/* --- ******************** ******************** ******************** --- */
+
+/* --- Header | #top-bar Styles --- */
+#top-bar .container { padding: 5px 20px; }
+#top-bar #inner-container { font-size: 0; width: auto; height: auto; float: right; }
+#top-bar #inner-container .menu li, #top-bar #inner-container .widget li, #top-bar #inner-container .menu li a, #top-bar #inner-container .widget li a { margin: 0 5px; display: inline-block; }
+#top-bar #inner-container .menu li:first-of-type, #top-bar #inner-container .widget li:first-of-type, #top-bar #inner-container .menu li a:first-of-type, #top-bar #inner-container .widget li a:first-of-type { margin: 0 5px 0 0; }
+#top-bar #inner-container .menu li:last-of-type, #top-bar #inner-container .widget li:last-of-type, #top-bar #inner-container .menu li a:last-of-type, #top-bar #inner-container .widget li a:last-of-type { margin: 0 0 0 5px; }
+#top-bar #inner-container .menu li:only-of-type, #top-bar #inner-container .widget li:only-of-type, #top-bar #inner-container .menu li a:only-of-type, #top-bar #inner-container .widget li a:only-of-type { margin: 0; }
+
+/* --- Header | #main-bar Styles --- */
+#main-bar .container { padding: 0 20px; }
+#main-bar #site-identity { height: 120px; margin: 0 5px; display: block; float: left; }
+#main-bar #site-identity a, #main-bar #site-identity img.custom-logo { width: auto !important; height: 100% !important; display: block !important; }
+#main-bar nav.menu { float: right; }
+#main-bar nav.menu ul.menu { font-size: 0; }
+#main-bar nav.menu ul.menu > li { margin: 0 15px; display: inline-block; position: relative; }
+#main-bar nav.menu ul.menu > li:first-of-type { margin: 0 15px 0 0; }
+#main-bar nav.menu ul.menu > li:last-of-type { margin: 0 0 0 15px; }
+#main-bar nav.menu ul.menu > li:only-of-type { margin: 0; }
+#main-bar nav.menu ul.menu > li.current-menu-item > a:after, #main-bar .menu ul.menu > li.current_page_parent > a:after { content: ""; width: 100%; height: 7; border-bottom-width: 2px; border-bottom-style: solid; margin-top: 5px; position: absolute; display: block; }
+#main-bar nav.menu ul.menu > li > a { max-height: 24px; padding: 48px 0; display: block; overflow: hidden; }
+#main-bar nav.menu ul.menu .sub-menu { width: 200px; display: none; position: absolute; top: 120px; left: 0; z-index: 1; }
+#main-bar nav.menu ul.menu .sub-menu li.menu-item { list-style: none; margin: 0; }
+#main-bar nav.menu ul.menu .sub-menu a { width: 170px; border-bottom-width: 1px; border-bottom-style: solid; padding: 10px 15px; display: block; }
+#main-bar nav.menu ul.menu .sub-menu a:after { display: none; }
+#main-bar nav.responsive-menu .icon-bars:before { margin: 45px 5px; display: inline-block; cursor: pointer; }
+#main-bar nav.responsive-menu { display: none; float: right; position: relative; }
+#main-bar nav.responsive-menu ul.menu { width: 200px; display: none; position: absolute; top: 120px; right: 0; z-index: 1; }
+#main-bar nav.responsive-menu ul.menu li { list-style: none; margin: 0; }
+#main-bar nav.responsive-menu ul.menu a { width: 170px; border-bottom-width: 1px; border-bottom-style: solid; padding: 10px 15px; display: block; }
+
+/* --- Header | #breadcrumb-bar Styles --- */
+#breadcrumb-bar .container { padding: 20px; }
+#breadcrumb-bar p { margin: 0 5px; display: inline-block; float: right; }
+
+
+
+/* --- Theme #Content Styles --- */
+
+/* --- ******************** ******************** ******************** --- */
+#Content p { margin-bottom: 15px; }
+
+/* --- #Content | 404 Styles --- */
+#redirect-404 { width: 154.98px; height: 42px; }
+#redirect-404 a.button { display: block; }
+
+
+
+/* --- #Content | Post Styles --- */
+
+/* --- ******************** ******************** ******************** --- */
+
+#posts.wrapper { width: 100%; padding: 50px 0; display: block; }
+#posts .container { font-size: 0; width: 100%; max-width: 1040px; margin: 0 auto; padding: 0 20px; display: block; }
+
+/* --- #Content | Timeline Template Styles --- */
+#timeline.post-wrapper { width: 100%; max-width: 1000px; margin: 20px 0; display: block; }
+#timeline .featured-image { width: 25%; max-width: 250px; height: 25%; max-height: 250px; display: inline-block; }
+#timeline .post-container { width: 75%; max-width: 750px; min-height: 250px; padding: 15px; display: inline-block; position: relative; }
+#timeline .post-container a.button { text-align: center; max-width: 96.05px; position: absolute; right: 15px; bottom: 15px; }
+#timeline .post-title { margin-bottom: 5px; display: inline-block; }
+#timeline .post-metadata i[class^="icon"] { margin: 0 5px; }
+#timeline .post-excerpt { display: inline; }
+
+/* --- #Content | Masonry Template Styles --- */
+#masonry.post-wrapper { width: 100%; max-width: 303.33333333333333px; margin: 15px; display: inline-block; }
+#masonry .featured-image { width: 100%; max-width: 100%; height: 100%; max-height: 100%; padding: 50%; display: block; position: relative; overflow: hidden; }
+#masonry .featured-image a { width: 100%; height: 100%; margin: -50%; display: block; position: absolute; }
+#masonry .post-container { width: 100%; padding: 15px; }
+#masonry .post-container a.button { text-align: center; max-width: 96.05px; float: right; }
+#masonry .post-title { width: 100%; height: 25px; margin-bottom: 5px; display: inline-block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+#masonry .post-metadata { margin-bottom: 5px; display: block; }
+#masonry .post-metadata i[class^="icon"] { margin: 0 5px; }
+#masonry .post-metadata i.icon-calender-o { margin: 0 5px 0 0; }
+
+/* --- #Content | Tiles Template Styles --- */
+#tiles.post-wrapper { width: 100%; max-width: 313.33333333333333px; margin: 10px; display: inline-block; }
+#tiles a { width: 100%; max-width: 100%; height: 100%; max-height: 100%; padding: 50%; display: block; position: relative; overflow: hidden; }
+#tiles .featured-image { width: 100%; height: 100%; margin: -50%; display: block; position: absolute; }
+#tiles .overlay { width: 100%; height: 100%; margin: 0 -50%; display: block; position: absolute; }
+#tiles .post-title { width: 90%; max-height: 30px; margin: 18px -45%; position: absolute; bottom: 0; z-index: 1; }
+#tiles .post-title:after { content: ""; width: 0; border-bottom-width: 3px; border-bottom-style: solid; margin: 5px 0 10px 0; display: block; }
+#tiles .post-title h3 { max-height: 30px; overflow: hidden; text-overflow: ellipsis; }
+
+/* --- #Content | Team Member Template Styles --- */
+#team.post-wrapper { width: 100%; max-width: 303.33333333333333px; margin: 15px; display: inline-block; }
+#team .featured-image { width: 100%; max-width: 100%; height: 100%; max-height: 100%; padding: 50%; display: block; position: relative; overflow: hidden; }
+#team .featured-image a { width: 100%; height: 100%; margin: -50%; display: block; position: absolute; }
+#team .post-container { width: 100%; padding: 15px; }
+#team .post-title { width: 100%; height: 25px; margin-bottom: 5px; display: inline-block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+#team .post-position { font-weight: bold; text-transform: uppercase; margin-bottom: 5px; display: block; }
+#team .post-social-media { text-align: right; width: auto; display: block; }
+#team .post-social-media i[class^="icon"] { margin: 0 5px; display: inline-block; }
+
+/* --- #Content | Portfolio Template Styles --- */
+#portfolio.post-wrapper { width: 100%; max-width: 313.33333333333333px; margin: 10px; display: inline-block; }
+#portfolio a { width: 100%; max-width: 100%; height: 100%; max-height: 100%; padding: 50%; display: block; position: relative; overflow: hidden; }
+#portfolio .featured-image { width: 100%; height: 100%; margin: -50%; display: block; position: absolute; }
+#portfolio .overlay { width: 100%; height: 100%; margin: 0 -50%; display: block; position: absolute; }
+#portfolio .post-title { width: 90%; max-height: 30px; margin: 18px -45%; position: absolute; bottom: 0; z-index: 1; }
+#portfolio .post-title:after { content: ""; width: 0; border-bottom-width: 3px; border-bottom-style: solid; margin: 5px 0 10px 0; display: block; }
+#portfolio .post-title h3 { max-height: 30px; overflow: hidden; text-overflow: ellipsis; }
+
+/* --- #Content | Pagination Styles --- */
+.pagination-wrapper { width: 100%; margin-top: -20px; padding: 20px 0; display: block; }
+.pagination-wrapper h2 { display: none; }
+.pagination-wrapper .nav-links { font-size: 0; text-align: center; }
+.pagination-wrapper .nav-links .page-numbers { width: 48px; height: 48px; margin: 0 5px; padding: 15px 0; display: inline-block; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+
+/* --- #Content | Single Post Styles --- */
+
+/* --- ******************** ******************** ******************** --- */
+
+/* --- #Content | Post Navigation Styles --- */
+#single.wrapper { width: 100%; padding: 50px 0; display: block; }
+#single .container { font-size: 0; width: 100%; max-width: 1040px; margin: 0 auto; padding: 0 20px; display: block; }
+
+/* --- #Content | Post Navigation Styles --- */
+.post-navigation { width: 100%; max-width: 100%; height: 50px; max-height: 50px; display: block; position: fixed; bottom: 50px; overflow: hidden; }
+.post-navigation .previous-post { font-size: 0; height: 100%; margin-left: -230px; float: left; }
+.post-navigation .next-post { font-size: 0; height: 100%; margin-right: -230px; float: right; }
+.post-navigation a img { width: 50px; height: 50px; display: inline-block; }
+.post-navigation a span { display: inline-block; }
+.post-navigation .arrow-tabs { text-align: center; width: 50px; height: 50px; padding: 16px 0; }
+.post-navigation .post-name { text-align: center; width: 180px; padding: 17.5px 15px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.post-navigation .post-name:before { margin: 0 5px 0 -5px; }
+
+/* --- #Content | Comment Form Styles --- */
+#comments .container { width: calc(100%-70px); max-width: 700px; border-top-width: 1px; border-top-style: solid; padding: 50px 70px; }
+#comments .comment-list { list-style: none; margin: 0; }
+#comments .comment-body { margin: 20px 0; }
+#comments .comment-author { margin-bottom: 5px; position: relative; }
+#comments .comment-author .photo { width: 50px; height: 50px; border-radius: 100%; position: absolute; top: 0; left: -60px; }
+#comments .comment-metadata { margin-bottom: 15px; }
+#comments .children { list-style: none; margin-left: 20px; }
+#comments .children .comment-author .photo { width: 40px; height: 40px; border-radius: 100%; position: absolute; top: 0; left: -50px; }
+#comments .comment-author b, #comments .comment-metadata time { font-weight: bold; }
+#comments .comment-metadata time { text-transform: uppercase; }
+#comments .comment-body .icon-reply:before { margin-right: 5px; }
+#comments .comment-form { width: 100%; }
+#comments .comment-form label { font-weight: bold; margin-bottom: 10px; }
+
+
+
+/* --- Theme Footer Styles --- */
+
+/* --- ******************** ******************** ******************** --- */
+
+/* --- Footer | #footer-widgets Styles --- */
+#footer-widgets .container { font-size: 0; padding: 30px 20px; }
+#footer-widgets .full-width { width: 100%; display: inline-block; }
+#footer-widgets .half-width { width: 50%; display: inline-block; }
+#footer-widgets .third-width { width: 33.33333333333333%; display: inline-block; }
+#footer-widgets .quarter-width { width: 25%; display: inline-block; }
+#footer-widgets div.widget { width: calc(100%-20px); margin: 0 10px; display: block; }
+#footer-widgets li[class^="widget"] { margin: 10px 5px; display: block; }
+#footer-widgets li[class^="widget"]:first-of-type { margin: 0 5px 10px; }
+#footer-widgets li[class^="widget"]:last-of-type { margin: 10px 5px 0; }
+#footer-widgets li[class^="widget"]:only-of-type { margin: 0 5px; }
+#footer-widgets h1:after { content: ""; width: 100%; height: 1px; border-bottom-width: 1px; border-bottom-style: solid; margin: 5px 0 15px; display: block; }
+
+/* --- Footer | #footnote-bar Styles --- */
+#footnote-bar .container { text-align: center; padding: 0 20px; }
+#footnote-bar #footer-menu, #footnote-bar #footnote { width: 100%; max-width: 600px; margin: 0 auto; display: block; }
+#footnote-bar #footer-menu { border-bottom-width: 1px; border-bottom-style: solid; padding: 15px 0; }
+#footnote-bar #footer-menu > div > ul > li { margin: 0 5px; display: inline-block; }
+#footnote-bar #footnote { padding: 20px 0; }
+#footnote-bar #footnote #back-to-top { width: 43px; height: 43px; margin-bottom: 20px; display: inline-block; }
+#footnote-bar #footnote #back-to-top:before { margin: 0 auto; padding: 14px 0; display: block; }
+#footnote-bar #footnote .widget { margin: 0; display: block; }
+#footnote-bar #footnote p { display: block; }
+
+footer .widget_search #searchform #s { margin-bottom: 15px; }
+#footer-widgets .wpcf7-form .form-column.half { width: 100%; }
+
+
+
+/* --- Theme Menu & Widgets Styles --- */
+
+/* --- ******************** ******************** ******************** --- */
+
+/* --- Category, Tag & Recent Posts Widgets --- */
+.widget_categories .cat-item,
+.widget_tag_cloud a[class^="tag-link"],
+.widget_recent_entries li { margin: 0 5px 0 5px !important; display: inline-block !important; }
+
+/* --- Search Widget --- */
+.widget_search #searchform label { display: none; }
+
+/* --- Archives Widget --- */
+.widget_archive li { margin: 5px 0; }
+.widget_archive li:first-of-type { margin: 0 0 5px 0; }
+.widget_archive li:last-of-type { margin: 5px 0 0 0; }
+.widget_archive li:only-of-type { margin: 0; }

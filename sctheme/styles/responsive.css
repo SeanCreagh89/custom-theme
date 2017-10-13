@@ -1,0 +1,15 @@
+/*
+
+	Theme Name: SCTheme
+	Author: Sean Creagh
+	Description: SCTheme Responsive Layout
+	Version: 1.0
+
+*/
+
+@media screen and ( max-width: 805px ) {
+
+	#main-bar nav.menu { display: none; }
+	#main-bar nav.responsive-menu { display: inline-block; }
+
+}

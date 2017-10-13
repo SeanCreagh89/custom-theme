@@ -1,0 +1,131 @@
+/*
+
+	Theme Name: SCTheme
+	Author: Sean Creagh
+	Description: SCTheme Fonts
+	Version: 1.0
+
+*/
+
+
+
+/* --- Default Theme Fonts and Sizes --- */
+
+/* --- ******************** ******************** ******************** --- */
+
+body { font-family: 'Roboto', Helvetica, Arial, sans-serif; }
+p, a, i, li, label, input, textarea, button { font-size: 15px; }
+h1 { font-size: 35px; }
+h2 { font-size: 30px; }
+h3 { font-size: 25px; }
+h4 { font-size: 20px; }
+h5 { font-size: 15px; }
+h6 { font-size: 10px; }
+span { font-size: 13px; }
+
+#site-title.large-font { font-size: 50px; }
+#main-bar .menu-item a { font-size: 20px; }
+#masonry .post-metadata a, #masonry .post-metadata i, .comment-metadata time, .comment-metadata .comment-edit-link { font-size: 13px; }
+
+a[class^="tag-link"], span i:before, .page-numbers, span.says, span#email-notes { font-size: 15px !important; }
+#team .post-social-media i:before { font-size: 20px !important; }
+#main-bar nav.responsive-menu .icon-bars:before { font-size: 30px !important; }
+
+
+
+/* --- Font Awesome Icon Classes --- */
+
+/* --- ******************** ******************** ******************** --- */
+
+/* --- Menu Icons --- */
+.icon-bars:before { content: "\f0c9"; }
+
+/* --- Mobile and Email Icons --- */
+a[href^="mailto"]:before { content: "\f003"; }
+a[href^="tel"]:before { content: "\f095"; }
+
+/* --- User Icons --- */
+.icon-user:before { content: "\f007"; }
+.icon-user-circle:before { content: "\f2bd"; }
+.icon-user-circle-o:before { content: "\f2be"; }
+.icon-user-o:before { content: "\f2c0"; }
+
+/* --- Reply Icons --- */
+.icon-reply:before { content: "\f112"; }
+
+/* --- Quote Icons --- */
+blockquote:before { content: "\f10d"; }
+blockquote:after { content: "\f10e"; }
+
+.post-navigation .post-name:before { content: "\f016"; }
+
+/* --- Time and Date Icons --- */
+.icon-clock-o:before { content: "\f017"; }
+.icon-calender:before { content: "\f073"; }
+.icon-calender-o:before { content: "\f133"; }
+.icon-calender-plus-o:before { content: "\f271"; }
+.icon-calender-minus-o:before { content: "\f272"; }
+.icon-calender-times-o:before { content: "\f273"; }
+.icon-calender-check-o:before { content: "\f274"; }
+
+/* --- Comment Icons --- */
+.icon-comment:before { content: "\f075"; }
+.icon-comment-o:before { content: "\f0e5"; }
+.icon-commenting:before { content: "\f27a"; }
+.icon-commenting-o:before { content: "\f27b"; }
+.icon-comments:before { content: "\f086"; }
+.icon-comments-o:before { content: "\f0e6"; }
+
+/* --- Arrow Icons --- */
+.icon-arrow-left:before { content: "\f060"; }
+.icon-arrow-right:before { content: "\f061"; }
+.icon-arrow-up:before { content: "\f062"; }
+.icon-arrow-down:before { content: "\f063 "; }
+.icon-arrow-left-circle:before { content: "\f0a8"; }
+.icon-arrow-right-circle:before { content: "\f0a9"; }
+.icon-arrow-up-circle:before { content: "\f0aa"; }
+.icon-arrow-down-circle:before { content: "\f0ab"; }
+.icon-angle-left:before { content: "\f104";}
+.icon-angle-right:before { content: "\f105";}
+
+/* --- Social Media Icons --- */
+.icon-facebook:before { content: "\f09a"; }
+.icon-facebook-official:before { content: "\f230"; }
+.icon-facebook-square:before { content: "\f082"; }
+.icon-google:before { content: "\f1a0"; }
+.icon-google-plus:before { content: "\f0d5"; }
+.icon-google-plus-circle:before { content: "\f2b3"; }
+.icon-google-plus-square:before { content: "\f0d4"; }
+.icon-instagram:before { content: "\f16d"; }
+.icon-linkedin:before { content: "\f0e1"; }
+.icon-linkedin-square:before { content: "\f08c"; }
+.icon-pinterest:before { content: "\f0d2"; }
+.icon-pinterest-p:before { content: "\f231"; }
+.icon-pinterest-square:before { content: "\f0d3"; }
+.icon-reddit:before { content: "\f1a1"; }
+.icon-reddit-alien:before { content: "\f281"; }
+.icon-reddit-square:before { content: "\f1a2"; }
+.icon-skype:before { content: "\f17e"; }
+.icon-snapchat:before { content: "\f2ab"; }
+.icon-snapchat-ghost:before { content: "\f2ac"; }
+.icon-snapchat-square:before { content: "\f2ad"; }
+.icon-tumblr:before { content: "\f173"; }
+.icon-tumblr-square:before { content: "\f174"; }
+.icon-twitch:before { content: "\f1e8"; }
+.icon-twitter:before { content: "\f099"; }
+.icon-twitter-square:before { content: "\f081"; }
+.icon-vimeo:before { content: "\f27d"; }
+.icon-vimeo-square:before { content: "\f194"; }
+.icon-vine:before { content: "\f1ca"; }
+.icon-whatsapp:before { content: "\f232"; }
+.icon-youtube:before { content: "\f167"; }
+.icon-youtube-play:before { content: "\f16a"; }
+.icon-youtube-square:before { content: "\f166"; }
+
+a[href^="tel"]:before,
+a[href^="mailto"]:before,
+a[class^="icon-"]:before,
+i[class^="icon-"]:before,
+blockquote:before,
+blockquote:after,
+.post-navigation .post-name:before { font-family: FontAwesome; }
